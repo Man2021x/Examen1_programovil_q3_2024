@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
               leading: const Icon(Icons.newspaper),
               title: const Text('Noticias'),
               onTap: () {
-               Navigator.push(
+                Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const NewsWidget()),
                 ); 
@@ -56,38 +56,52 @@ class HomeScreen extends StatelessWidget {
               leading: const Icon(Icons.account_balance),
               title: const Text('Cambio de Monedas'),
               onTap: () {
-                 Navigator.push(
+                Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const CurrencyExchangeWidget()),
                 );
-                },
+              },
             ),
             ListTile(
               leading: const Icon(Icons.add_task),
               title: const Text('Lista de Tareas'),
               onTap: () {
-               Navigator.push(
+                Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const TaskListWidget()),
                 );
-                },
+              },
             ),
-            
             ListTile(
               leading: const Icon(Icons.podcasts),
               title: const Text('Podcast'),
               onTap: () {
-                 Navigator.push(
+                Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const PodcastWidget()),
                 );
-                },
+              },
             ),
           ],
         ),
       ),
-      body: const Center(
-        child: Text('Pantalla Principal'),
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage('https://universiwebb.com/wp-content/uploads/nombre_color.jpg'), 
+            fit: BoxFit.contain, 
+          ),
+        ),
+        child: const Center(
+          child: Text(
+            'Pantalla Principal',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
       ),
     );
   }

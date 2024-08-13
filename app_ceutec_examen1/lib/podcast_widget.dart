@@ -35,20 +35,24 @@ class PodcastWidgetState extends State<PodcastWidget> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   const ListTile(
-                    title: Text('Song'),
-                    subtitle: Text('Card content'),
+                    title: Text('Nombre de la Canción'),
+                    subtitle: Text('Nombre del Artista, Album'),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text('BUTTON 1'),
+                      IconButton(
+                        icon: const Icon(Icons.thumb_up),
+                        onPressed: () {
+                          // Acción para "manito arriba"
+                        },
                       ),
                       const SizedBox(width: 8),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text('BUTTON 2'),
+                      IconButton(
+                        icon: const Icon(Icons.thumb_down),
+                        onPressed: () {
+                          // Acción para "manito abajo"
+                        },
                       ),
                       const SizedBox(width: 8),
                     ],
