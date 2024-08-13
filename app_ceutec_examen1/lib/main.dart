@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'news_widget.dart'; 
+
 
 main() => runApp(const MainApp());
 
@@ -42,7 +44,10 @@ class HomeScreen extends StatelessWidget {
               leading: const Icon(Icons.newspaper),
               title: const Text('Noticias'),
               onTap: () {
-                Navigator.pop(context); // Cierra el drawer
+               Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const NewsWidget()),
+                ); 
               },
             ),
             ListTile(
