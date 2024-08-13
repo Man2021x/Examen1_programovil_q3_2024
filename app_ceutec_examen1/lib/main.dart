@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'news_widget.dart'; 
-
+import 'cambio_monedas.dart';
 
 main() => runApp(const MainApp());
 
@@ -54,8 +54,11 @@ class HomeScreen extends StatelessWidget {
               leading: const Icon(Icons.account_balance),
               title: const Text('El cambio de Monedas'),
               onTap: () {
-                Navigator.pop(context); // Cierra el drawer
-              },
+                 Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const CurrencyExchangeWidget()),
+                );
+                },
             ),
             ListTile(
               leading: const Icon(Icons.add_task),

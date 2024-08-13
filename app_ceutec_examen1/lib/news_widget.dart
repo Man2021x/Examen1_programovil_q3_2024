@@ -16,14 +16,14 @@ class NewsWidget extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Image.network(
-                  'https://previews.123rf.com/images/rastudio/rastudio1708/rastudio170809958/84944028-icono-de-l%C3%ADnea-de-vector-de-noticias-global-aislado-sobre-fondo-blanco-icono-de-l%C3%ADnea-de-noticias.jpg',
+                  'https://paradigma.hn/wp-content/uploads/2021/05/UNAH-CU-1.jpg',
                   height: 200,
                   width: double.infinity,
                   fit: BoxFit.cover,
                 ),
                 const ListTile(
-                  title: Text('Título de la noticia 1'),
-                  subtitle: Text('Breve descripción de la noticia 1.'),
+                  title: Text('¿Cuánto se paga en la Universidad de Honduras?'),
+                  subtitle: Text('Según el plan de arbitrios vigente de la UNAH los costos por matrícula corresponden de la siguiente manera: Estudiantes de primer ingreso L 410.00 lempiras (incluyendo el pago de los 60 lempiras por el “Curso Introducción a la Vida Universitaria”).'),
                 ),
               ],
             ),
@@ -32,14 +32,14 @@ class NewsWidget extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Image.network(
-                  'https://img.freepik.com/fotos-premium/objetos-blanco_932052-118.jpg?size=626&ext=jpg',
+                  'https://ceutec.hn/wp-content/uploads/2024/06/celebramos-con-orgullo-la-graduacion-de-357-nuevos-profesionales.jpg',
                   height: 200,
                   width: double.infinity,
                   fit: BoxFit.cover,
                 ),
                 const ListTile(
-                  title: Text('Título de la noticia 2'),
-                  subtitle: Text('Breve descripción de la noticia 2.'),
+                  title: Text('¡Celebramos con orgullo la graduación de 357 nuevos profesionales!'),
+                  subtitle: Text('Celebramos la graduación de 357 nuevos profesionales, incluyendo el primer grupo de Licenciatura en Terapia Física y Ocupacional.'),
                 ),
               ],
             ),
