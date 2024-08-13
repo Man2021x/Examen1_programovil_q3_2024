@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'news_widget.dart'; 
 import 'cambio_monedas.dart';
+import 'task_list.dart';
+import 'podcast_widget.dart';
 
 main() => runApp(const MainApp());
 
@@ -52,7 +54,7 @@ class HomeScreen extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.account_balance),
-              title: const Text('El cambio de Monedas'),
+              title: const Text('Cambio de Monedas'),
               onTap: () {
                  Navigator.push(
                   context,
@@ -64,15 +66,22 @@ class HomeScreen extends StatelessWidget {
               leading: const Icon(Icons.add_task),
               title: const Text('Lista de Tareas'),
               onTap: () {
-                Navigator.pop(context); // Cierra el drawer
-              },
+               Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const TaskListWidget()),
+                );
+                },
             ),
+            
             ListTile(
               leading: const Icon(Icons.podcasts),
               title: const Text('Podcast'),
               onTap: () {
-                Navigator.pop(context); // Cierra el drawer
-              },
+                 Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PodcastWidget()),
+                );
+                },
             ),
           ],
         ),
